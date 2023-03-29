@@ -32,7 +32,7 @@ class ListsController < ApplicationController
     list.destroy
     redirect_to'/lists'
   end
-  
+
   def create
    @list = List.new(list_params)
    if @list.save
